@@ -15,6 +15,9 @@ subtitle = "Example subtitle"
 [taxonomies]
   gemtag = "gemlog/tags"
 
+# The configuration below is REQUIRED to make Hugo work.
+# More information can be found at: https://sylvaindurand.org/gemini-and-hugo/
+
 [mediaTypes."text/gemini"]
 suffixes = [ "gmi" ]
 
