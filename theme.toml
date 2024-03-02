@@ -1,0 +1,18 @@
+name = 'Theme name'
+license = 'MIT'
+licenselink = 'https://github.com/owner/repo/LICENSE'
+description = 'Theme description'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/owner/repo'
+
+# If the theme has a single author
+[author]
+  name = 'Your name'
+  homepage = 'Your website'
+
+# If porting an existing theme
+[original]
+  author = 'Name of original author'
+  homepage = 'Website of original author'
+  repo = 'https://github.com/owner/repo'

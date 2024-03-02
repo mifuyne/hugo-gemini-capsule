@@ -1,0 +1,7 @@
+{{- define "main" -}}
+{{- .RenderShortcodes -}}
+{{- range .Pages}}
+=> {{ .Path }} {{ .Title }} ({{.Section}})
+{{ .Description }}
+{{- end -}}
+{{- end -}}

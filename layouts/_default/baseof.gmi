@@ -1,0 +1,19 @@
+{{- block "header" . -}}
+{{- if eq .IsHome true }}
+{{ print "# " .Site.Title }}
+{{- end -}}
+{{- if .Page.Title }}
+{{ print "# " .Page.Title -}}
+{{- end }}
+{{ end }}
+{{- block "main" . }}{{ end -}}
+{{ block "parentpage" . -}}
+{{ if ne .Kind "home" }}
+
+
+=> {{ .Parent.Path }} Back to parent {{with .Parent.Title}}({{ .}}){{ end }}
+{{ end }}
+{{- end }}
+{{- block "footer" . -}}
+{{ partial "footer.gmi" . }}
+{{- end }}

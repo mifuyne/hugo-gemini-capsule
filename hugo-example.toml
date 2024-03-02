@@ -1,0 +1,37 @@
+baseURL = 'gemini://example.com'
+languageCode = 'en-us'
+title = "Example capsule"
+theme = 'gemini-capsule'
+publishDir = 'capsule'
+disableKinds = [ "robotstxt", "sitemap" ]
+
+[params]
+subtitle = "Example subtitle"
+
+  [params.author]
+  name = "name-here"
+  misfin = "misfin-address-here"
+
+[taxonomies]
+  gemtag = "gemlog/tags"
+
+[mediaTypes."text/gemini"]
+suffixes = [ "gmi" ]
+
+[outputFormats.GEMINI]
+name = "GEMINI"
+isPlainText = true
+isHTML = false
+mediaType = "text/gemini"
+protocol = "gemini://"
+permalinkable = true
+root = true
+rel = "canonical"
+weight = 1
+
+[outputs]
+home = [ "GEMINI" ]
+page = [ "GEMINI" ]
+section = [ "GEMINI" ]
+taxonomy = [ "GEMINI" ]
+term = [ "GEMINI" ]

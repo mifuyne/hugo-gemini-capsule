@@ -1,0 +1,15 @@
+{{- define "main" -}}
+{{- .RenderShortcodes }}
+```Post's Metadata
+---
+Metadata:
+___
+
+First published on {{ .PublishDate | time.Format "2006 January 02" }}.
+{{ with .Lastmod }}Last modified on {{ . | time.Format "2006 January 02" }}.{{- end }}
+```
+{{ end }}
+{{ define "parentpage" }}
+
+{{ with .Parent.Parent }}=> {{ .Path }} Back to parent {{with .Title}}({{ . }}){{ end }}{{ end }}
+{{ end }}

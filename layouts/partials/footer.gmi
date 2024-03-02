@@ -1,0 +1,4 @@
+```footer separator
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+© {{ now.Year }} {{ $.Site.Params.author.name }}.

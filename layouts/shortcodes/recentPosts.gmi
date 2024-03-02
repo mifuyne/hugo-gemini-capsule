@@ -1,0 +1,8 @@
+{{- $section := .Get "section" }}
+{{- $limit := .Get "limit" }}
+{{- range (.Site.GetPage $section).Sections }}
+  {{- range .RegularPages.Limit $limit }}
+=> {{ .Path }} {{ time.Format "2006-01-02" .Date }} - {{ .Title }}
+  {{- end }}
+{{- end }}
+=> /{{ $section }} All Posts
