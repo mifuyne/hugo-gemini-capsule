@@ -2,7 +2,8 @@
 {{- range .RegularPages}}
 ### {{ time.Format "2006-01-02 15:04 MST" .Date }}
 {{ .RenderShortcodes }}
-{{ end -}}
-{{- .RenderShortcodes }}
+{{- end }}
+
+{{ .RenderShortcodes }}
 
 {{- end -}}
