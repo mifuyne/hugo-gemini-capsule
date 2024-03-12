@@ -1,5 +1,11 @@
 {{- define "main" -}}
 {{- .RenderShortcodes }}
+{{ with .Params.links -}}
+### Relevant Links
+  {{- range . }}
+=> {{ . }}
+  {{- end }}
+{{- end }}
 ```Post's Metadata
 ---
 Metadata:
